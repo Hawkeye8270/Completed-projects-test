@@ -4,9 +4,29 @@
 <html>
 <head>
     <title>Tic-Tac-Toe</title>
+    <link href="static/main.css" rel="stylesheet">
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 </head>
 <body>
 <h1>Tic-Tac-Toe</h1>
+
+<table>
+    <tr>
+        <td onclick="window.location='/logic?click=0'"> ${data.get(0).getSign()}</td>
+        <td onclick="window.location='/logic?click=0'"> ${data.get(1).getSign()}</td>
+        <td onclick="window.location='/logic?click=0'"> ${data.get(2).getSign()}</td>
+    </tr>
+    <tr>
+        <td onclick="window.location='/logic?click=0'">${data.get(3).getSign()}</td>
+        <td onclick="window.location='/logic?click=0'">${data.get(4).getSign()}</td>
+        <td onclick="window.location='/logic?click=0'">${data.get(5).getSign()}</td>
+    </tr>
+    <tr>
+        <td onclick="window.location='/logic?click=0'">${data.get(6).getSign()}</td>
+        <td onclick="window.location='/logic?click=0'">${data.get(7).getSign()}</td>
+        <td onclick="window.location='/logic?click=0'">${data.get(8).getSign()}</td>
+    </tr>
+</table>
 
 
 <script>
