@@ -17,7 +17,7 @@
 
 <table>
     <tr>
-        <td onclick="window.location='/logic?click=0'">${data.get(0).getSign()}</td>
+        <td onclick="window.location='/logic?click=0'"> ${data.get(0).getSign()}</td>
         <td onclick="window.location='/logic?click=1'"> ${data.get(1).getSign()}</td>
         <td onclick="window.location='/logic?click=2'"> ${data.get(2).getSign()}</td>
     </tr>
